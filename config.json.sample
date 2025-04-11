@@ -1,0 +1,23 @@
+{
+    "active_server_key": "internal_mock",
+    "external_mcp_url": "http://localhost:8080/sse",
+    "internal_mock_config": {
+        "enabled": true,
+        "type": "sse",
+        "port": 8081
+    },
+    "mcpServers": {
+        "filesystem": {
+            "enabled": false,
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "/Users/username/Desktop",
+                "/path/to/other/allowed/dir"
+            ],
+            "cwd": null
+        }
+    }
+}
